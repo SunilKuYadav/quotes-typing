@@ -226,13 +226,6 @@ body {
   text-align: left
 }
 
-.highligth-text {
-  color: red;
-  position: absolute;
-  z-index: 1;
-  text-align: left;
-}
-
 input[type="range"] {
   opacity: .2;
   transition: all .5s;

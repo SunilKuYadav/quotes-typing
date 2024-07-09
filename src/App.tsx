@@ -39,16 +39,14 @@ function App() {
   }
 
   const handleInputChange = (e: any): void => {
-    if (currentQuotes[currentIndex].includes(e.target.value)) {
-      highlight(e.target.value);
-    }
+    highlight(e.target.value);
     setCharCount((prev: number) => prev + 1);
     setInput(() => e.target.value);
   };
 
   const handleEnterKeyHit = (e: any) => {
     if (e.key === "Enter") {
-      if (currentQuotes[currentIndex] === highlightedQuotes) {
+      if (currentQuotes[currentIndex] === highlightedQuotes.slice(0, -1)) {
         setAnimate((prev) => (prev === "slide-up" ? "slide-ups" : "slide-up"));
         setAnimate2((prev) =>
           prev === "slide-up-" ? "slide-ups-" : "slide-up-"
@@ -60,6 +58,33 @@ function App() {
         setCurrentIndex(() => (currentIndex + 1) % len);
       }
     }
+  };
+
+  const getHighlightedText = (text: string, highlight: string) => {
+    const strings = text.split("");
+
+    return strings.map((string, index) => {
+      console.log("index", index, highlight.length);
+      if (string === highlight[index]) {
+        return (
+          <span key={index} style={{ color: "green" }}>
+            {string}
+          </span>
+        );
+      } else if (index < highlight.length) {
+        return (
+          <del key={index} style={{ color: "red" }}>
+            {string}
+          </del>
+        );
+      } else {
+        return (
+          <span key={index} style={{ color: "white" }}>
+            {string}
+          </span>
+        );
+      }
+    });
   };
   const handleQuotesCollectionChange = (e: any) => {
     setCurrentIndex(0);
@@ -95,15 +120,17 @@ function App() {
           <p className={`${animate2} text-preview white`}>
             {currentQuotes[(currentIndex - 1) % currentQuotes.length]}
           </p>
-          <div className="type-text-view white">
-            <p className="highligth-text">{highlightedQuotes}</p>
+          <div className="type-text-view">
             <p
               className={animate}
               style={{
                 opacity: textVisibilty,
               }}
             >
-              {currentQuotes[currentIndex]}
+              {getHighlightedText(
+                currentQuotes[currentIndex],
+                highlightedQuotes
+              )}
             </p>
           </div>
           <p className={`${animate1} text-preview white`}>
