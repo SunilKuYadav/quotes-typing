@@ -12,7 +12,8 @@ import {
   ankur_warikoo_22_lessons,
   Jet_Van_Wijk,
 } from "../data";
-import { QuotesAction, QuotesActionKind, QuotesState } from "../types";
+import { QuotesActionKind } from "../types";
+import type { QuotesAction, QuotesState } from "../types";
 
 const initialState: QuotesState = [
   ...SMILE,

@@ -5,7 +5,7 @@ import { useDateAndTime, useLocalStorage, useQuotesReducer } from "./hooks";
 import { getFormatedTime } from "./utils";
 import { OPTIONS } from "./types";
 
-function App() {
+const App = () => {
   const [input, setInput] = useState("");
   const [timmer, setTimmer] = useState(0);
   const [animate, setAnimate] = useState("slide-up");
@@ -250,4 +250,4 @@ function App() {
   );
 }
 
-export default App;
+export {App};
