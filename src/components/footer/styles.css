@@ -1,0 +1,180 @@
+footer {
+  background: #1b242f;
+  padding: 70px 0 40px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.editor-wrapper {
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(22, 20, 20);
+  background-image: none;
+  cursor: pointer;
+  font-family: "Dancing Script";
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.quotes-collection-option {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 2em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.quotes-collection-option::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  background-color: #34495e;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+
+.quotes-collection-option:hover::after {
+  color: #0f0;
+}
+
+.p-0 {
+  padding: 0;
+  margin: 0;
+}
+
+.counter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-btn {
+  border: 2px solid #0f0;
+  background-color: transparent;
+  color: #f00;
+  outline: none;
+  font-size: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  transition: all 0.5s;
+}
+
+.reset-btn:hover {
+  border: 2px solid #0f0;
+  color: #0f0;
+  background-color: #f00;
+  transition: all 0.5s;
+}
+
+.name-input {
+  width: 300px;
+  font-size: 40px;
+  background-color: transparent;
+  border: 2px solid #f00;
+  font-family: "Dancing Script";
+  color: #fff;
+}
+
+footer .mdi-chevron-double-up {
+  background: #d60059;
+  cursor: pointer;
+  font-size: 30pt;
+  height: 40px;
+  left: 0;
+  line-height: 40pt;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -25px;
+  transition: background 0.5s;
+  width: 47px;
+}
+
+footer .mdi-chevron-double-up:hover {
+  background: #eb0b68;
+}
+
+footer .icon-wrap .icon {
+  background: #adc3da;
+  cursor: pointer;
+  font-size: 18pt;
+  height: 55px;
+  margin: 0 15px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s,
+    border-radius 0.3s;
+  width: 55px;
+}
+
+footer .icon-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .icon-wrap .mdi {
+  color: rgb(204, 8, 8);
+  text-align: center;
+}
+
+footer .icon-wrap .mdi.mdi-codepen {
+  font-size: 20pt;
+}
+
+footer .icon-wrap .icon:hover {
+  background: #04c2c9;
+  box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+  border-radius: 50%;
+  transition: border-radius 0.3s;
+  transform: scale(0.9);
+}
+
+footer .icon-wrap .icon:hover .mdi {
+  color: #000;
+}
+
+footer .icon-wrap .icon:hover .mdi {
+  -webkit-animation: toBottomFromTop 0.3s forwards;
+  -moz-animation: toBottomFromTop 0.3s forwards;
+  animation: toBottomFromTop 0.3s forwards;
+}
+
+footer .footnote {
+  color: #007dfa;
+  font-size: 10pt;
+  margin-top: 35px;
+  opacity: 0.6;
+}
+
+footer .footnote .highlight {
+  color: #dd005c;
+  font-family: "Open Sans";
+}

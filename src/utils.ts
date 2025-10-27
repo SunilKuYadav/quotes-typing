@@ -1,4 +1,4 @@
-const getFormatedTime = (second: number) => {
+const getFormattedTime = (second: number) => {
   let sec: string | number = second % 60;
   let min: string | number = Math.floor((second / 60) % 60);
   let hour: string | number = Math.floor(second / 60 / 60);
@@ -10,4 +10,4 @@ const getFormatedTime = (second: number) => {
   return `${hour}:${min}:${sec}`;
 };
 
-export { getFormatedTime };
+export { getFormattedTime };

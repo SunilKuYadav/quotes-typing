@@ -276,7 +276,6 @@ const al: string[] = [
   "Well-groomed people make a great first impression. Alpha men are very particular about how they present themselves. They maintain personal hygiene, wear good clothes, and make sure they look their best. They are confident individuals and use their body language to their advantage. Standing straight, keeping the chin up, proper eye contact, firm handshake — these come naturally to the alpha male while interacting with people.",
   "13. He is protective of loved ones",
   "He cares about people close to himSave",
-  "Image: Shutterstock",
   "Real alpha men are not controlling but are fiercely protective of their loved ones. They care about people close to them and do everything in their power to keep these people safe. They don't enjoy fights but seeing their dear ones in pain and at risk might bring out their aggressive side.",
   "14. He has strong communication skills",
   "Alpha men are good with people. They share interesting stories and keep their audience thoroughly entertained. Their innate charisma pulls people in, and they speak with confidence and assertiveness, gaining people's trust. They also speak transparently and listen with interest when others talk.",
@@ -318,7 +317,7 @@ const advice5: string[] = [
 const advice6: string[] = [
   "Take care of your body. Remember health is another form of wealth.",
   "Normalize walking some paths alone because goals are personal.",
-  "Don't waste your enery to fear. Uae your energy to believe, learn, create, and grow.",
+  "Don't waste your energy to fear. Uae your energy to believe, learn, create, and grow.",
   "If you want to be happy, always have zero expectations of others",
   "Tell no one about your plans, level up in private.",
   "You won't be young forever, do what makes you happy every day.",
@@ -329,13 +328,13 @@ const advice6: string[] = [
   "Do yourself a favor, get rich; Life gets easier with money not time.",
   "Master self discipline and consistency and watch your life change.",
   "The family you create is more important than the family you come from.",
-  "Don't go broke tryimg to impress broke people",
+  "Don't go broke trying to impress broke people",
   "Be smart enough to realize nobody got rich with a salary.",
 ];
 const ankur_warikoo_22_lessons: string[] = [
   "You can change your past by changing the meaning of your memories.",
   "The smarter you get, the faster you lose friends.",
-  "Money doesn't chhange you. It amplifies who you truly are.",
+  "Money doesn't change you. It amplifies who you truly are.",
   "You don't suck at managing your time, you just don't know how valuable it is.",
   "A beautiful life is to know how to live alone, but never have the need to.",
   "Your fear of embarrassing yourself, is your biggest hurdle to growth.",
