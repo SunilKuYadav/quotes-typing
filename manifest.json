@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Quotes Typing",
+  "name": "Quotes Typing is a React-based app designed to improve your ten-finger typing with motivational quotes.",
   "icons": [
     {
       "src": "favicon.ico",
