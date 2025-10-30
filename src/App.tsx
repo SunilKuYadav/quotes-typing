@@ -1,8 +1,9 @@
-import { useDateAndTime, useLocalStorage, useQuotesReducer } from "./hooks";
-import { Footer, Header, TypingGame } from "./components";
 import { useEffect, useState } from "react";
 
 import "./App.css";
+import { Footer, Header, TypingGame } from "./components";
+import { useDateAndTime, useLocalStorage, useQuotesReducer } from "./hooks";
+
 
 function App() {
   const { date, time, wish } = useDateAndTime();
@@ -15,7 +16,7 @@ function App() {
   const handleQuotesCollectionChange = (
     e: React.ChangeEvent<HTMLSelectElement>
   ) => {
-    dispatchQuotes({ type: e.target.value });
+    dispatchQuotes({ type: e.target.value as any });
   };
 
   useEffect(() => {
@@ -28,7 +29,7 @@ function App() {
   return (
     <div style={{ height: "100vh" }} className="App">
       <Header date={date} time={time} wish={wish} name={name} timer={timer} />
-      <TypingGame quotes={currentQuotes} />
+      <TypingGame quotes={currentQuotes as any} />
 
       <Footer
         onCollectionChange={handleQuotesCollectionChange}

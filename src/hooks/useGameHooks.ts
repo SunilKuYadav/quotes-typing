@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useLocalStorage } from './useLocalStorage'; // Assuming you have this hook
+import type { QuotesState } from '../types';
 
-export const useTypingGame = (quotes: string[]) => {
+export const useTypingGame = (quotes: QuotesState[]) => {
   const [currentIndex, setCurrentIndex] = useLocalStorage("index", 0);
   const [inputValue, setInputValue] = useState('');
   const [timer, setTimer] = useState(0);

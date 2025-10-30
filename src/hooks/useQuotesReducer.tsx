@@ -27,9 +27,8 @@ const initialState: QuotesState = [
   ...Freedom_is_Worth_The_Fight,
   ...Jet_Van_Wijk,
 ];
-const init = () => initialState;
 
-const reducer = (state: QuotesState, action: QuotesAction) => {
+const reducer = (_: QuotesState, action: QuotesAction): QuotesState => {
   switch (action.type) {
     case QuotesActionKind.ADVICE_1:
       return [...SMILE, ...advice1];
@@ -53,12 +52,8 @@ const reducer = (state: QuotesState, action: QuotesAction) => {
 };
 
 const useQuotesReducer = () => {
-  const [state, dispatch] = useReducer<any, QuotesState>(
-    reducer,
-    initialState,
-    init
-  );
-  return [state, dispatch];
+  const [state, dispatch] = useReducer(reducer, initialState);
+  return [state, dispatch] as const;
 };
 
 export default useQuotesReducer;

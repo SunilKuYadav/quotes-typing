@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useTypingGame } from "../../hooks";
-import { TypingText } from "./typing-text";
 
 import "./styles.css";
+import { TypingText } from "./typing-text";
+import { useTypingGame } from "../../hooks";
+import type { QuotesState } from "../../types";
 
 interface TypingGameProps {
-  quotes: string[];
+  quotes: QuotesState[];
 }
 
 export const TypingGame: React.FC<TypingGameProps> = ({ quotes }) => {
@@ -29,11 +30,11 @@ export const TypingGame: React.FC<TypingGameProps> = ({ quotes }) => {
   return (
     <section className="typing-game-container">
       <div className="text-wrapper">
-        <p className="text-preview white slide-up-">{getPrevQuote()}</p>
+        <p className="text-preview white slide-up-">{getPrevQuote() as string}</p>
         <div key={animationKey} className="type-text-view slide-up">
-          <TypingText text={state.currentQuote} userInput={state.inputValue} />
+          <TypingText text={state.currentQuote as string} userInput={state.inputValue} />
         </div>
-        <p className="text-preview white pop-in">{getNextQuote()}</p>
+        <p className="text-preview white pop-in">{getNextQuote() as string}</p>
       </div>
       <textarea
         className="typing-area"
