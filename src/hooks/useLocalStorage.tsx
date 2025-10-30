@@ -43,4 +43,4 @@ const useLocalStorage = (key: string, initialValue: string | number) => {
   return [storedValue, setValue];
 };
 
-export default useLocalStorage;
+export { useLocalStorage };

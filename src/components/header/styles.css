@@ -1,0 +1,49 @@
+.date-time-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.wish {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.date-time {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+.app-name {
+  color: #0f0;
+  font-size: 40px;
+  text-shadow: 2px 2px #ff0000;
+  font-weight: bold;
+}
+.timer {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}

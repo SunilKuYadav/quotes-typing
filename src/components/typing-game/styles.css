@@ -1,0 +1,106 @@
+
+@keyframes slideUp {
+  0% {
+    font-size: "20px";
+    transform: translateY(100px);
+  }
+
+  100% {
+    font-size: "30px";
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpss {
+  0% {
+    font-size: "30px";
+    opacity: 1;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 0.1;
+    font-size: "20px";
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+
+  60% {
+    transform: scale(1.05);
+  }
+
+  80% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.typing-game-container {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.type-text-view {
+  border: 1px solid transparent;
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left
+}
+.slide-up {
+  animation: slideUp 0.75s ease both;
+}
+
+.text-wrapper {
+  max-width: 1000px;
+  margin-top: 140px;
+}
+.text-preview {
+  opacity: 0.1;
+  font-size: 25px;
+}
+.slide-up- {
+  animation: slideUpss 0.75s ease both;
+}
+.pop-in {
+  animation: popIn 1s ease both;
+}
+
+.typing-area {
+  min-width: 90vw;
+  max-width: 1000px;
+  font-size: 40px;
+  font-family: "Dancing Script";
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  resize: none;
+  background-color: #000;
+  color: grey;
+  padding-bottom: 40px;
+  border-radius: 5px;
+}
+
+
+/* 
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+} */
+
